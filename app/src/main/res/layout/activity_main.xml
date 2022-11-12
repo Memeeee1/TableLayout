@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF8F8"
+    android:backgroundTint="#FFFFFF"
+    android:stretchColumns="4">
+
+    <TableRow>
+
+        <TextView
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/poids"
+            android:textColor="#FF0000" />
+
+        <EditText
+            android:id="@+id/poids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_span="1"
+            android:ems="10"
+            android:hint="@string/poids"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="@string/taille"
+            android:textColor="#FF0000" />
+
+        <EditText
+            android:id="@+id/taille"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_span="1"
+            android:ems="10"
+            android:hint="@string/taille"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/mc"
+            android:layout_span="4"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/metre"
+                android:layout_width="106dp"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:text="@string/m_tre" />
+
+            <RadioButton
+                android:id="@+id/cm"
+
+                android:layout_width="185dp"
+                android:layout_height="match_parent"
+                android:text="@string/centim_tre" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow>
+
+        <CheckBox
+            android:id="@+id/mf"
+            android:layout_span="4"
+            android:text="@string/m_ga_fonction" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="372dp"
+        android:layout_height="72dp">
+
+        <Button
+            android:id="@+id/calculer"
+            android:layout_width="177dp"
+            android:layout_height="37dp"
+            android:layout_column="0"
+            android:background="#E6E6E6"
+            android:backgroundTint="#A6A6A6"
+            android:text="@string/calculer_l_imc" />
+
+        <Button
+            android:id="@+id/annuler"
+            android:layout_column="3"
+            android:layout_marginStart="100dp"
+            android:layout_span="3"
+            android:text="@string/annuler" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/res"
+            android:layout_span="4"
+            android:text="@string/r_sultat_n_vous_devez_cliquer_sur_le_bouton_calculer_l_imc_pur_obtenir_un_r_sultat" />
+    </TableRow>
+
+</TableLayout>

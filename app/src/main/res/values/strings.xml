@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LayoutTable</string>
+    <string name="m_ga_fonction">méga fonction</string>
+    <string name="centim_tre">Centimètre</string>
+    <string name="m_tre">Mètre</string>
+    <string name="taille">Taille</string>
+    <string name="poids">Poids</string>
+    <string name="calculer_l_imc">Calculer l\'IMC</string>
+    <string name="annuler">Annuler</string>
+    <string name="r_sultat_n_vous_devez_cliquer_sur_le_bouton_calculer_l_imc_pur_obtenir_un_r_sultat">résultat \n vous devez cliquer sur le bouton calculer l\'imc pour obtenir un résultat</string>
+</resources>
